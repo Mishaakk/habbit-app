@@ -1,0 +1,47 @@
+:root {
+    --light-primary: #fff;
+    --color-left-menu: #FBFAFF;
+    --border-primary: #5051F9;
+    --color-okey: #EDECFE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Comfortaa", sans-serif;;
+}
+
+
+*::selection {
+    background-color: grey;
+}
+
+
+.container__left {
+
+}
+
+.container__left_image {
+    margin: 26px 46.26px 0 66px;
+
+}
+
+.container__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__menu_title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;   
+}
+
+.container__menu_right {
+    display: flex;
+
+}
