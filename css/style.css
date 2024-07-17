@@ -1,47 +1,258 @@
-:root {
-    --light-primary: #fff;
-    --color-left-menu: #FBFAFF;
-    --border-primary: #5051F9;
-    --color-okey: #EDECFE;
-}
-
 * {
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: "Comfortaa", sans-serif;;
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    background-color: #F3F6FD;
 }
 
-
-*::selection {
-    background-color: grey;
-}
-
-
-.container__left {
-
-}
-
-.container__left_image {
-    margin: 26px 46.26px 0 66px;
-
-}
-
-.container__menu {
+.container {
     display: flex;
-    justify-content: space-around;
+    /* gap: 50px; */
+
+}
+
+.panel {
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 40px;
+    padding-top: 30px; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.panel > img {
+    margin-bottom: 50px;
+}
+
+
+.menu__item,
+.menu__add { 
+    border-radius: 14px;
+    box-shadow: 0px 8px 14px 0px rgba(62, 107, 224, 0.12);
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 12.5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
+.menu__item_gym {
+    background-color: #5051F9;
+}
+
+.menu__item:hover {
+    background-color: #5051F9;
+}
+
+.menu__item:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.menu__item_gym:hover {
+    background-color: #6A6AFB;
+}
+
+.menu__add {
+    border: 1px solid rgb(202, 213, 255);
+}
+
+.menu__add:hover {
+    background-color: #CAD5FF;
+}
+
+
+.menu__add:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+.header__title {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    /* margin: 45px 0 0 50px; */
+}
+
+.progress__bar {
+    border-radius: 4px;
+    background: rgb(230, 233, 237);
+    height: 5px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.container__menu_title {
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 34px;   
+
+.content {
+    min-width: 900px;
+    padding: 45px;    
 }
 
-.container__menu_right {
+
+
+.progress {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 235px;
+}
+
+
+.progress__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__text {
+    color: rgb(35, 35, 96);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+.progress__percent {
+    color: rgb(118, 131, 150);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+
+.progress__bar {
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.progress__bar_active {
+    border-radius: 4px;
+    background: rgb(230, 233, 237);
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    background: rgb(80, 81, 249);
+}
+
+
+
+.habbit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 50px;
+}
+
+.habbit__day {
+    background: rgb(251, 250, 255);
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid #E7EBFB;
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.habbit__comment {
+    margin-right: auto;
+    margin-left: 23px;
+    color: rgb(35, 35, 95);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.habbit__delete {
+    border: none;
+    background: none;
+    margin-right: 10px;
+}
+
+.habbit__delete:hover {
+    border: 1.5px solid rgb(148, 163, 189);
+}
+
+
+.habbit__input {
+    border: 1px solid rgb(231, 235, 251);
+    border-radius: 9px;
+    background: rgb(255, 255, 255);
+    padding: 12px 20px 12px 45px;
+    margin-left: 40px;
+    flex: 1;
+    /* position: relative; */
+}
+
+.habbit__input::placeholder {
+    color: rgb(136, 153, 168);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+.habbit__icon_comment {
+    position: absolute;
+    top: 12px;
+    left: 55px;
+    bottom: 10px;
+    right: 10px;
 
 }
+
+
+.habbit__button {
+    border-radius: 9px;
+    border: none;
+    background: none;
+    background-color: #EDECFE;
+    padding: 15px 30px;
+    margin-right: 5px;
+    color: rgb(80, 81, 249);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.habbit__button:hover {
+    background-color: #cac8fa;
+}
+
+
+.habbit__form {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-right: auto;
+    color: rgb(35, 35, 95);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;        
+    position: relative;
+    /* padding: 0 25px; */
+}
+
+

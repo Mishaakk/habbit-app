@@ -3,31 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>habits app</title>
+    <title>Habbit app</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> 
-    </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="container__left">
-                <img class="container__left_image" src="img/Logomark.svg" alt="image-menu">
-                <h3 class="container__left_subtitle">Habbit</h3>
-            </div>
-            <div class="container__menu">
-                <span class="container__menu_title">Отжимания</span>
-                <div class="container__menu_right">
-                    <span class="container__menu_text">Прогресс</span>
-                    <input type="range">
-                    <span class="container__menu_procent">80%</span>
+    <div class="container">
+        <div class="panel">
+            <img src="img/Group 74.svg" alt="image: Logomark">
+            <div class="menu">
+                <div class="menu__list">
+                    <button class="menu__item menu__item_gym">
+                        <img src="img/gymlogo.svg" alt="image: Gym">
+                    </button>
+                    <button class="menu__item">
+                        <img src="img/Water.svg" alt="image: water">
+                    </button>
+                    <button class="menu__item">
+                        <img src="img/Group.svg" alt="image: eat">
+                    </button>
+                    <button class="menu__add">
+                        <img src="img/Add.svg" alt="image: add">
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- /.container -->
-    </header>
-    <!-- /.header -->
+        <div class="content">
+            <header class="header">
+                <h1 class="header__title">Отжимания</h1>
+                <div class="progress">
+                    <div class="progress__content">
+                        <div class="progress__text">Прогресс</div>
+                        <div class="progress__percent">80%</div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__bar_active"></div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="habbit">
+                    <div class="habbit__day">Day 1</div>
+                    <div class="habbit__comment">Первый подход всегда даётся тяжело</div>
+                    <button class="habbit__delete">
+                        <img src="img/delete.svg" alt="image: delete icon">
+                    </button>
+                </div>
+                <div class="habbit">
+                    <div class="habbit__day">Day 2</div>
+                    <form class="habbit__form">
+                        <input class="habbit__input" type="text" placeholder="comment">
+                        <img class="habbit__icon_comment" src="img/Group 68.svg" alt="image: comment icon">
+                        <button class="habbit__button">Готово</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
 
 
 
